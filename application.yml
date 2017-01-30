@@ -6,10 +6,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
+      
+foo: bar
 
 ---
 spring:
-  profiles: cloud
+  profiles: cloudold
   cloud:
     config:
       uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://${PREFIX:}${configserver.${application.domain:cfapps.io}}}
