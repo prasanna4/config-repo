@@ -7,7 +7,7 @@ info:
 #    serviceUrl:
 #      defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
       
-foo: bar3
+foo: bar
 
 ---
 spring:
